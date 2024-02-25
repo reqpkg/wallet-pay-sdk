@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": false,
+    "skipLibCheck": true,
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": false,
+    "resolveJsonModule": true,
+    "declaration": true,
+  },
+  "include": ["src"],
+}

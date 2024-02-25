@@ -1,0 +1,40 @@
+{
+  "name": "wallet-pay-sdk-ts",
+  "version": "1.0.1",
+  "description": "Wallet Pay (Telegram) SDK",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/index.mjs",
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "generate-client": "swagger-typescript-api -p https://docs.wallet.tg/pay/integration-schema.yaml -o ./src -n client.ts --api-class-name WalletPayClient --unwrap-response-data"
+  },
+  "author": {
+    "name": "strikebu77",
+    "email": "strikebu77@gmail.com",
+    "url": "https://github.com/strikebu77"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reqpkg/reqprettier"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "reqprettier": "^1.0.8",
+    "swagger-typescript-api": "^13.0.3",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
+  },
+  "prettier": "reqprettier"
+}

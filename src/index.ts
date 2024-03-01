@@ -1,7 +1,7 @@
 import { createHmac } from 'node:crypto'
 
 import { WalletPayClient } from './client'
-import type { WebhookMessage } from './client'
+import type { CreateOrderRequest, WebhookMessage } from './client'
 
 const WEBHOOK_HTTP_METHOD = 'POST'
 
@@ -12,15 +12,30 @@ const WEBHOOK_HTTP_METHOD = 'POST'
  */
 export function createWalletPaySDK(walletPayStoreApiKey: string, webhookUriPath?: string) {
   const walletPayClient = new WalletPayClient()
-
-  walletPayClient.setSecurityData({
+  const requestParams = {
     headers: {
       'Wpay-Store-Api-Key': walletPayStoreApiKey,
     },
-  })
+  }
 
   return {
     ...walletPayClient.wpay,
+
+    create(data: CreateOrderRequest) {
+      return walletPayClient.wpay.create(data, requestParams)
+    },
+
+    getPreview(data: Parameters<typeof walletPayClient.wpay.getPreview>[0]) {
+      return walletPayClient.wpay.getPreview(data, requestParams)
+    },
+
+    getOrderList(data: Parameters<typeof walletPayClient.wpay.getOrderList>[0]) {
+      return walletPayClient.wpay.getOrderList(data, requestParams)
+    },
+
+    getOrderAmount() {
+      return walletPayClient.wpay.getOrderAmount(requestParams)
+    },
 
     verifyWebhook(timestamp: string, signature: string, body: WebhookMessage[]): boolean {
       if (!webhookUriPath) {

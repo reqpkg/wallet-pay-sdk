@@ -20,7 +20,7 @@ npm i wallet-pay-sdk-ts
 ### Initial
 
 ```js
-import { createWalletPaySDK } from 'wallet-pay-sdk'
+import { createWalletPaySDK } from 'wallet-pay-sdk-ts'
 
 const walletPay = createWalletPaySDK('[STORE_API_KEY]', '[WEBHOOK_URI_PATH]')
 ```

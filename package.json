@@ -1,7 +1,7 @@
 {
   "name": "wallet-pay-sdk-ts",
-  "version": "1.0.7",
-  "description": "Wallet Pay (Telegram) SDK",
+  "version": "1.0.11",
+  "description": "Wallet Pay (Telegram) SDK with TypeScript support",
   "type": "module",
   "exports": {
     ".": {
@@ -26,8 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reqpkg/wallet-pay-sdk"
+    "url": "https://github.com/reqpkg/wallet-pay-sdk-ts"
   },
+  "keywords": [
+    "wallet-pay",
+    "telegram",
+    "sdk"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.20",

@@ -1,5 +1,7 @@
 # 👛 Wallet Pay (Telegram) SDK
 
+Wallet Pay (Telegram) SDK with TypeScript support
+
 <a href="https://pay.wallet.tg/" target="_blank">
   <img src="https://raw.githubusercontent.com/reqpkg/wallet-pay-sdk/main/wallet-logo.svg" />
 </a>

@@ -8,8 +8,18 @@ Wallet Pay (Telegram) SDK with TypeScript support
 
 <br />
 
-* [Official site.](https://pay.wallet.tg/)
-* [Official documentation.](https://docs.wallet.tg/pay/)
+- [Official site.](https://pay.wallet.tg/)
+- [Official documentation.](https://docs.wallet.tg/pay/)
+
+* [👛 Wallet Pay (Telegram) SDK](#-wallet-pay-telegram-sdk)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Initial](#initial)
+    - [Create Order](#create-order)
+    - [Get Order Preview](#get-order-preview)
+    - [Get Order List](#get-order-list)
+    - [Get Order Amount](#get-order-amount)
+    - [Verifying webhook](#verifying-webhook)
 
 ## Installation
 
@@ -33,7 +43,7 @@ const walletPay = createWalletPaySDK('[STORE_API_KEY]', '[WEBHOOK_URI_PATH]')
 walletPay.create({
   amount: {
     currencyCode: 'USD',
-    amount: '1.00'
+    amount: '1.00',
   },
   autoConversionCurrency: 'USDT',
   description: 'VPN for 1 month',
@@ -42,7 +52,7 @@ walletPay.create({
   customData: 'client_ref=4E89',
   externalId: 'ORD-5023-4E89',
   timeoutSeconds: 10800,
-  customerTelegramUserId: 0
+  customerTelegramUserId: 0,
 })
 ```
 

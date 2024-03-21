@@ -1,7 +1,7 @@
 {
   "name": "wallet-pay-sdk-ts",
-  "version": "1.0.11",
-  "description": "Wallet Pay (Telegram) SDK with TypeScript support",
+  "version": "1.0.12",
+  "description": "👛 Wallet Pay (Telegram) SDK with TypeScript support",
   "type": "module",
   "exports": {
     ".": {

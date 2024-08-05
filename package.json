@@ -35,7 +35,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.11.20",
+    "@types/node": "^22.1.0",
     "reqprettier": "^1.0.8",
     "swagger-typescript-api": "^13.0.3",
     "typescript": "^5.3.3",

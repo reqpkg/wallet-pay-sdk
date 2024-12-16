@@ -39,7 +39,7 @@
     "reqprettier": "^1.0.8",
     "swagger-typescript-api": "^13.0.3",
     "typescript": "^5.3.3",
-    "unbuild": "^2.0.0"
+    "unbuild": "^3.0.1"
   },
   "prettier": "reqprettier"
 }
